@@ -208,7 +208,7 @@
 			Print a list of five random directories/files in $HOME (no subdirectories) sorted by size without size field.
 		</li>
 		<li class="slide">
-			<tt>du -sh ~/* | cut -f 2 | shuf | head -n5 | sort -h</tt>
+			<tt>du -sh ~/* | shuf | head -n5 | sort -h | cut -f 2</tt>
 		</li>
 		<li>
 			Print all but five lines of a file in reverse order with line numbers (of result).
